@@ -1,0 +1,1165 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+#topbtn
+{
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(253, 253, 253); 
+    color: rgb(14, 13, 13); 
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 3vw; 
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.separator0
+{
+    border-top: 0.4vw solid black;
+    width: 20%;
+    position: relative;
+    top: 112px;
+}
+.separator1
+{
+    border-top: 0.4vw solid black;
+    width: 20%;
+    position: relative;
+    top: 90px;
+}
+.separator2
+{
+    border-top: 0.5vw solid black;
+    width: 20%;
+    position: relative;
+    top: 150px;
+}
+.separator3
+{
+    border-top: 0.5vw solid black;
+    width: 20%;
+    position: relative;
+    top: 50px;
+}
+.separator4
+{
+    border-top: 0.5vw solid black;
+    width: 20%;
+    position: relative;
+    top: 80px;
+}
+.separator5
+{
+    border-top: 0.5vw solid black;
+    width: 20%;
+    position: relative;
+    top: 180px;
+    z-index: 1;
+}
+
+.active 
+{
+    text-decoration: underline wavy black ;
+    
+}
+
+/*===========================================================================================================================*/
+nav
+{
+    width: 100%;
+    background-color: rgb(115, 115, 255);
+    display: flex;
+    box-shadow: 2px 2px 12px black;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-ul{
+    width: 60%;
+    /* border: solid; */
+    height: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15vw;
+}
+
+.nav-ul li a
+{
+    font-size: 1.5vw;
+    font-family: 'Kufam', cursive;
+    font-weight: bold;
+    color:white;
+    margin: 0px 10px;
+}
+.nav-ul a:hover
+{
+    
+    text-decoration: underline wavy;
+    text-decoration-color: black;
+} 
+.ham
+{
+    background-color: rgb(115, 115, 255);
+    height: 8vw;
+    width: 10%;
+    border: unset;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    font-size: 4vw;
+    display: none;
+    z-index: 100;
+}
+@media screen and (max-width: 650px) 
+{
+    #topbtn
+    {
+        font-size: 8vw;
+        right: 2vw;
+    }
+    .nav-ul
+    {
+        width: 50%;
+        height: 40vw;
+        background-color: rgb(115, 115, 255);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 12px black;
+        position: absolute;
+        right: 0.5vw;
+        padding: 0;
+    }
+    .ham
+    {
+        display: block;
+    }
+    .nav-ul li a
+    {
+        margin: 0;
+        font-size: 3vw;
+    }
+    .nav-ul li a:hover
+    {
+        color: turquoise;
+    }
+    .nav-ul
+    {
+        flex-direction: column;
+        display: none;
+    }
+    .nav-ul.show
+    {
+        height: 70vw;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+}
+
+/*======================================================================================================*/
+
+#intro-section
+{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 50vw;
+    /* border: 4px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box1{
+   /* border: 2px solid black; */
+    width: 50%;
+    align-items: center;
+    position: relative;
+    height: 30vw;
+}
+.box2{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: auto;
+}
+.box2 img{
+    height: auto;
+    width: 80%;
+   }
+
+#hello{
+    font-family: 'Jura', sans-serif;
+    font-size: 3vw;
+    margin: 0rem;
+    position: absolute;
+    /* border: solid; */
+    display: inline-block;
+    position: absolute;
+    top: 4vw;
+    animation: anim1 1.7s linear 1s infinite alternate;
+}
+@keyframes anim1
+{
+    0%{top:4vw;}
+    25%{top:3vw;}
+    50%{top:2vw;}
+    75%{top:3vw;}
+    100%{top:4vw;}
+}
+#cp{
+    font-family: 'Jura', sans-serif;
+    font-size: 2vw;
+    position: absolute;
+    top: 10vw;
+}
+#intro-section h1{
+    font-family:'Lemonada', cursive;
+    font-size: 3vw;
+    margin: 0rem;
+    position: absolute;
+    top: 8vw;
+}
+#vipul
+{
+    color: red;
+    animation: anim2 5s linear 1s infinite alternate;
+}
+@keyframes anim2
+{
+    0%{color:red;}
+    25%{color:rgb(0, 255, 242);}
+    30%{color:rgb(255, 0, 179);}
+    50%{color:lime;}
+    60%{color:rgb(229, 255, 0);}
+    75%{color:rgb(17, 0, 255);}
+    100%{color:black;}
+}
+
+.bt
+{
+    position: absolute;
+    top: 17vw;
+    padding: 0;
+    width: 25%;
+    height: 2.5vw;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Kufam', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .bt a{
+     color: black;
+    font-size: 1.3vw;
+    font-weight: bold;
+ }
+ .bt:hover
+ {
+     cursor: pointer;
+     background-color:  rgb(115, 115, 255);
+     color: white;
+ }
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#about-section{
+    width: 100%;
+    height: 50vw;
+    /* border: 4px solid red; */
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.about-head{
+/* border: 2px solid black; */
+width: 15%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.about-text{
+    /* border: 4px dotted black; */
+    height: auto;
+    width: 60%;
+}
+.about-me{
+    font-size: 2.4vw;
+    color: black;
+    font-family: 'Itim', cursive;
+}
+.h-about{
+    font-family: 'Kufam', cursive;
+    font-size: 3.5vw;
+    color: red;
+    text-decoration: underline solid black;
+}
+
+/*==============================================================================================================*/
+
+#education-section{
+    width: 100%;
+    height: 60vw;
+    position: relative;
+    top: 5vw;
+    /* border: 4px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.education-head
+{
+/* border: solid; */
+width: 18%;
+justify-content: center;
+align-items: center;
+height: 5vw;
+}
+.edu
+{
+/* border: solid; */
+width: 60%;
+height: 40vw;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+
+.edu-cell
+{
+    border: 0.4vw solid red;
+    width: 75%;
+    background-color: rgba(146, 146, 146, 0.253);
+    height: 7vw;
+    border-radius: 2%;
+}
+.education-head h1
+{
+    margin: 0;
+    font-family: 'Kufam', cursive;
+    font-size: 3.5vw;
+    color: red;
+    text-decoration: underline solid black;
+}
+.edu-cell h2
+{
+    font-size: 2vw;    
+    color: black;
+    font-family: 'Kufam', cursive;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.edu-cell h4
+{
+    font-size: 1.2vw;
+    color:  rgb(96, 96, 255);
+    font-family: 'Kufam', cursive;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*=============================================================================================================================*/
+
+#skill-section
+{
+    width: 100%;
+    height: 70vw;
+    position: relative;
+    top: 100px;
+    /* border: 4px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.skill-head
+{
+    /* border: solid; */
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;  
+}
+.skill-head h1
+{
+    font-family: 'Kufam', cursive;
+    font-size: 3.5vw;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline solid black;
+}
+.skill-container
+{
+    height: 30vw;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* border: 2px solid rebeccapurple; */
+
+}
+.skill-canvas
+{
+    /* border: 4px solid red; */
+    width: 24%;
+}
+
+/*===================================================================================================================*/
+#project-section
+{
+    width: 100%;
+    height: 70vw;
+    /* border: 4px solid red; */
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.project-head
+{
+     /* border: solid; */
+     margin-right: 100px;
+     width: 15%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 20vh;
+}
+.project-head h1
+{
+    font-family: 'Kufam', cursive;
+    font-size: 3.5vw;
+    color: red;
+    text-decoration: underline solid black;
+}
+.project-container
+{
+    width: 70%;
+    /* border: 2px solid black; */
+    height: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-cell
+{
+    border: 4px solid rgba(49, 248, 10, 0.712);
+    width: 40%;
+    text-align: center;
+}
+.project-container h1
+{
+    font-family: 'kufam',cursive;
+    color: black;
+    font-size: 1.3vw;
+}
+.project-cell img
+{
+    width: 100%;
+}
+.project-cell img:hover
+{
+    transform: scale(1.05);
+}
+/*==================================================================================================================*/
+
+#achieve-section
+{
+    width: 100%;
+    height: 90vw;
+    /* border: 2px solid black; */
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.achieve-head
+{
+     /* border: solid; */
+     width: 25%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+}
+.achieve-head h1
+{
+    font-family: 'kufam', cursive;
+    font-size: 3.1vw;
+    color: red;
+    text-decoration: underline solid black;
+}
+.achieve-container
+{
+    width: 80%;
+    height: 90vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.achieve-container a
+{
+    border: 4px solid lime;
+    width: 35%;
+    height: 20vw;
+    margin-top: 50px;
+}
+.achieve-container a:hover
+{
+    transform: scale(1.05);
+}
+.achieve-container img
+{
+    width: 100%;
+    height: 100%;
+}
+/*================================================================================================================*/
+#contact-section
+{
+    width: 100%;
+    height: 60vw;
+    /* border: 2px solid black; */
+    top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;   
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    height: 40vw;
+    width: 100%;
+  }
+  
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+/* border: 4px solid rgba(0, 0, 0, 0.8); */
+padding: 20px;
+font-size: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contact-containerForm
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid blue; */
+    width: 90%;
+
+}
+
+.contact-containerForm input
+{
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+}
+.contact-containerForm textarea
+{
+    width: 60%;
+    border-radius: 10px;
+}
+.item2
+{
+    /* background-color: grey; */
+
+}
+.item2 ul
+{
+    background-color: #fff;
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    right: 100px;
+    /* border: solid; */
+    width: 100%;
+}
+.item2 ul li, .item2 ul li a
+{
+    margin: 2vw 0vw;
+    font-size: 1.2vw;
+    font-family: 'Itim', cursive;
+    color: black;
+}
+.item2 ul li a:hover
+{
+    color: mediumblue;
+}
+.item2 i
+{
+    padding-top: 5px;
+    background-color: rgba(88, 124, 241, 0.274);
+    height: 1.7vw;
+    border-radius: 1vw;
+    
+}
+.item3 h1
+{
+     /* border: solid; */
+     position: relative;
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.item3 h1
+{
+    font-family: 'kufam', cursive;
+    font-size: 3.5vw;
+    color: red;
+    text-decoration: underline solid black;
+}
+input
+{
+    font-size: 1.5vw;
+    font-family: 'Itim', cursive;
+}
+input[type="text"],input[type="email"]
+{
+    height: 3vw;
+    margin-top: 3vw;
+}
+input[type="submit"]
+{
+    font-size: 1.5vw;
+    font-family: 'Itim', cursive;
+    width: 20%;
+    height: 3vw;
+
+}
+input[type="submit"]:hover
+{
+    background-color: rgb(96, 96, 255);
+    color: white;
+    cursor: pointer;
+}
+textarea
+{
+    font-size: 1.5vw;
+    font-family: 'Itim', cursive;
+    height: 10vw;
+    margin: 3vw auto;
+}
+
+/*====================================================================================================================*/
+footer
+{
+    text-align: center;
+    background-color: rgb(39, 33, 33);
+    color: white;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vw;
+    font-size: 1vw;
+}
+
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+@media screen and (max-width:650px)
+{
+    #intro-section
+    {
+    position: relative;
+    top: 7vw;
+    width: 100%;
+    height: 80vw;
+    /* border: 4px solid green; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .box1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: solid; */
+        width: 100%;
+        height: 40vw;
+    }
+     .box2
+     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+         width: 40%;
+         height: auto;
+     }
+     
+     #hello{
+         font-size: 8vw;
+         /* border: solid; */
+         top: 2vw;
+     
+     }
+     #cp{
+         font-family: 'Jura', sans-serif;
+         font-size: 4vw;
+         position: absolute;
+         top: 16vw;
+     }
+     #intro-section h1{
+         font-size: 6vw;
+         position: absolute;
+         top: 10vw;
+     }
+     
+     .bt
+     {
+         position: absolute;
+         top: 33vw;
+         left: 37vw;
+         margin: 0;
+         padding: 0;
+         width: 25%;
+         height: 5vw;
+      }
+      .bt a
+      {
+          color: black;
+         font-size: 2.8vw;
+         font-weight: bold;
+      }
+      .bt:hover
+      {
+          cursor: pointer;
+          background-color:  rgb(115, 115, 255);
+          color: white;
+      }
+     
+    /*------------------------------------------------------------------------------------------------*/
+
+    #about-section
+    {
+        flex-direction: column;
+        justify-content: center;
+        /* border: solid lime; */
+        height: 100vw;
+    }
+    .about-head
+    {
+    width: 30%;
+    }
+    .about-text
+    {
+        width: 85%;
+    }
+    .about-me
+    {
+        font-size: 4vw;
+    }
+    .h-about
+    {
+        font-size: 8vw;
+    }
+    /*--------------------------------------------------------------------------------------------------*/
+
+    #education-section
+    {
+        top: 79px;
+        height: 80vw;
+        /* border: solid green; */
+        flex-direction: column;
+    }
+    .education-head
+    {
+    /* border: solid; */
+    width: 30%;
+    display: flex;
+    height: 5vw;
+    }
+    .edu
+    {
+    /* border: solid; */
+    width: 80%;
+    height: 70%;
+    }
+
+    .edu-cell
+    {
+        border: 0.4vw solid red;
+        width: 90%;
+        background-color: rgba(146, 146, 146, 0.253);
+        height: 20%;
+        border-radius: 2%;
+    }
+    .education-head h1
+    {
+        font-family: 'Kufam', cursive;
+        font-size: 8vw;
+        color: red;
+        text-decoration: underline solid black;
+    }
+    .edu-cell h2
+    {
+        font-size: 3vw;    
+        color: black;
+        margin-top: 1px;
+    }
+    .edu-cell h4
+    {
+        font-size: 2vw;
+    }
+
+    /*------------------------------------------------------------------------------------------------------*/
+    #skill-section
+    {
+        width: 100%;
+        height: 210vw;
+        padding: 0;
+        position: relative;
+        top: 60px;
+        /* border: solid yellow; */
+        flex-direction: column;
+
+    }
+    .skill-head
+    {
+        /* border: solid; */
+        width: 18%;
+        height: auto;
+    }
+    .skill-head h1
+    {
+        font-size: 8vw;
+    }
+    .skill-container
+    {
+        height: 180vw;
+        width: 90%;
+        flex-direction: column;
+        /* border: 2px solid rebeccapurple; */
+
+    }
+    .skill-canvas
+    {
+        /* border: 4px solid red; */
+        width: 50%;
+    }
+
+    /*==============================================================================================================*/
+
+    #project-section
+    {
+        width: 100%;
+        height: 280vw;
+        /* border: 4px solid red; */
+        position: relative;
+        top: 25vw;
+        flex-direction: column;
+    }
+    .project-head
+    {
+        /* border: solid; */
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .project-head h1
+    {
+        font-size: 8vw;
+    }
+    .project-container
+    {
+        width: 65%;
+        /* border: 2px solid black; */
+        height: 250vw;
+        flex-direction: column;
+    }
+    .project-cell
+    {
+        width: 100%;
+    }
+    .project-container h1
+    {
+        font-family: 'kufam',cursive;
+        color: black;
+        font-size: 3.5vw;
+    }
+    /*==================================================================================================================*/
+
+    #achieve-section
+    {
+        width: 100%;
+        height: 420vw;
+        /* border: solid blue; */
+        top: 30vw;
+        flex-direction: column;
+    }
+    .achieve-head
+    {
+        /* border: solid; */
+        width: 100%;
+        height: auto;
+    }
+    .achieve-head h1
+    {
+        font-size: 8vw;
+    }
+    .achieve-container
+    {
+        
+        width: 70%;
+        height: 400vw;
+        /* border: 2px solid black; */
+        flex-direction: column;
+
+    }
+    .achieve-container a
+    {
+        margin: 0;
+        border: 4px solid lime;
+        width: 100%;
+        height: 55vw;
+    }
+
+    /*==========================================================================================================================*/
+
+    #contact-section
+    {
+        width: 100%;
+        height: 100vw;
+        /* border: solid fuchsia; */
+        top: 40vw;
+        flex-direction: column;
+    }
+    .grid-container 
+    {
+        /* border: dotted; */
+        height: 80vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .grid-item 
+    {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 4px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
+    flex-direction: column;
+    }
+    
+    .contact-containerForm
+    {
+        width: 100%;
+        height: 70vw;
+    }
+    
+    .contact-containerForm input
+    {
+        width: 90%;
+        border-radius: 10px;
+    }
+    .contact-containerForm textarea
+    {
+        width: 90%;
+        border-radius: 10px;
+    }
+    .item2
+    {
+        order: 2;
+    }
+    .item1
+    {
+        order: 1;
+    }
+    .item2 ul
+    {
+        
+        background-color: #fff;
+        height: 50vw;
+        width: 50%;
+        /* border: solid; */
+        margin: 0px 150px;
+        left: 15px;
+
+    }
+    .item2 ul li, .item2 ul li a
+    {
+        margin: 2vw 2vw;
+        font-size: 3vw;
+        font-family: 'Itim', cursive;
+        color: black;
+    
+    }
+    .item2 ul li a:hover
+    {
+        color: mediumblue;
+    }
+    .item2 i
+    {
+        padding-top: 1vw;
+        background-color: rgba(88, 124, 241, 0.274);
+        height: 4vw;
+        border-radius: 1vw;
+        
+    }
+    .item3 
+    {
+         /* border: solid; */
+         position: relative;
+         width: 100%;
+         height: auto;
+         padding: 0;
+    }
+    .item3 h1
+    {
+        margin: 0;
+        font-family: 'kufam', cursive;
+        font-size: 8vw;
+        color: red;
+        text-decoration: underline solid black;
+    }
+    input
+    {
+        font-size: 6vw;
+        font-family: 'Itim', cursive;
+    }
+    input[type="text"],input[type="email"]
+    {
+        height: 7vw;
+        margin-top: 3vw;
+    }
+    input[type="submit"]
+    {
+        font-size: 5vw;
+        font-family: 'Itim', cursive;
+        width: 40%;
+        height: 6vw;
+        padding-bottom: 6vw;
+    
+    }
+    input[type="submit"]:hover
+    {
+        background-color: rgb(96, 96, 255);
+        color: white;
+        cursor: pointer;
+    }
+    textarea
+    {
+        font-size: 6vw;
+        font-family: 'Itim', cursive;
+        height: 15vw;
+        margin-top: 2vw;
+    }
+    /*=============================================================================================================*/
+    footer
+    {
+        height: 8vw;
+        font-size: 2vw;
+        top: 450px;
+    }
+    /*==================================================================================================================*/
+
+.separator0
+{
+    width: 30%;
+}
+.separator1
+{
+    border-top: 0.4vw solid black;
+    width: 30%;
+    position: relative;
+    top: 70px;
+}
+.separator2
+{
+    width: 30%;
+    top: 70px;
+}
+.separator3
+{
+    width: 30%;
+    top: 25vw;
+}
+.separator4
+{
+    width: 30%;
+    top: 30vw;
+}
+.separator5
+{
+    border-top: 0.5vw solid black;
+    width: 30%;
+    top: 40vw;
+}
+
+
+}
